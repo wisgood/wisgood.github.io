@@ -7,7 +7,7 @@
 
 # Site settings
 title: wisgood
-brief-intro: Front-end Dev Engineer
+brief-intro: 大数据工程师
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://wisgood.github.io" # the base hostname & protocol for your site
 
