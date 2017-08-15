@@ -34,7 +34,8 @@ type: page
 * GitHub：[Gaohaoyang](https://github.com/wisgood)
 * email：wangxiaoweihust@163.com
 * QQ:25172026
-* WeiXin:wisgood
+* 微信:wisgood
+* csdn blog:http://blog.csdn.net/wisgood
 
 ## 关于本站
 
