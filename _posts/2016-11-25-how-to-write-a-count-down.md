@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "前端如何写一个精确的倒计时"
-categories: JavaScript
-tags:  countdown JavaScript
-author: HyG
+title:  "hive中join导致的数据倾斜问题排查"
+categories: hive
+tags:  hive join 数据倾斜
+author: wisgood
 ---
 
 * content
