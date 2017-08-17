@@ -33,9 +33,9 @@ type: page
 
 #### Hive
 
- 1. Hive-12541:SymbolicTextInputFormat should supports the path with regex
+ 1. HIVE-12541:SymbolicTextInputFormat should supports the path with regex
 https://issues.apache.org/jira/browse/HIVE-12541
- 2. hive-10790: orc write on viewFS throws exception
+ 2. HIVE-10790: orc write on viewFS throws exception
 https://issues.apache.org/jira/browse/HIVE-10790
  3. HIVE-11095:SerDeUtils another bug ,when Text is reused
 https://issues.apache.org/jira/browse/HIVE-11095
