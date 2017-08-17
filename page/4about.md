@@ -33,31 +33,26 @@ type: page
 
 #### Hive
 
- 1. HIVE-12541:SymbolicTextInputFormat should supports the path with regex
-https://issues.apache.org/jira/browse/HIVE-12541
+ 1. HIVE-12541:SymbolicTextInputFormat should supports the path with regex.[link](https://issues.apache.org/jira/browse/HIVE-12541)
 
- 2. HIVE-10790: orc write on viewFS throws exception
- 
-https://issues.apache.org/jira/browse/HIVE-10790
+ 2. HIVE-10790: orc write on viewFS throws exception.[link](https://issues.apache.org/jira/browse/HIVE-10790)
 
- 3. HIVE-11095:SerDeUtils another bug ,when Text is reused
- 
-https://issues.apache.org/jira/browse/HIVE-11095
+ 3. HIVE-11095:SerDeUtils another bug ,when Text is reused[link](https://issues.apache.org/jira/browse/HIVE-11095)
 
 #### Pig
 
- 1. PIG-4618:When use tez as the engine , set pig.user.cache.enabled=true do not take effect
+ 1. PIG-4618:When use tez as the engine , set pig.user.cache.enabled=true do not take effect[link](https://issues.apache.org/jira/browse/PIG-4618)
  
-https://issues.apache.org/jira/browse/PIG-4618
+
 
 #### Tez
 
- 1. TEZ-2600:When used with HDFS federation(viewfs) ,tez will throw a error
+ 1. TEZ-2600:When used with HDFS federation(viewfs) ,tez will throw a error[link](https://issues.apache.org/jira/browse/TEZ-2600)
  
-https://issues.apache.org/jira/browse/TEZ-2600
+
 
 #### Yarn
 
- 1. YARN-4296:DistributedShell Log.info is not friendly
+ 1. YARN-4296:DistributedShell Log.info is not friendly[link](https://issues.apache.org/jira/browse/YARN-4296)
  
-https://issues.apache.org/jira/browse/YARN-4296
+
