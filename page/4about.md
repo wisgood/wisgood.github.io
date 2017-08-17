@@ -35,22 +35,29 @@ type: page
 
  1. HIVE-12541:SymbolicTextInputFormat should supports the path with regex
 https://issues.apache.org/jira/browse/HIVE-12541
+
  2. HIVE-10790: orc write on viewFS throws exception
+ 
 https://issues.apache.org/jira/browse/HIVE-10790
+
  3. HIVE-11095:SerDeUtils another bug ,when Text is reused
+ 
 https://issues.apache.org/jira/browse/HIVE-11095
 
 #### Pig
 
- 1.PIG-4618:When use tez as the engine , set pig.user.cache.enabled=true do not take effect
+ 1. PIG-4618:When use tez as the engine , set pig.user.cache.enabled=true do not take effect
+ 
 https://issues.apache.org/jira/browse/PIG-4618
 
 #### Tez
 
  1. TEZ-2600:When used with HDFS federation(viewfs) ,tez will throw a error
+ 
 https://issues.apache.org/jira/browse/TEZ-2600
 
 #### Yarn
 
  1. YARN-4296:DistributedShell Log.info is not friendly
+ 
 https://issues.apache.org/jira/browse/YARN-4296
