@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "linux下调整/tmp目录大小"
-categories: Linux
-tags:  Linux 运维 lvm 
+title:  "hadoop节点字符编码导致的reduce重复记录问题排查"
+categories: Hadoop
+tags:  Hadoop
 author: wisgood
 ---
 
