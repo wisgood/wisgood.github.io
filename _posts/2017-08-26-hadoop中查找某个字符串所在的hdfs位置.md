@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "hadoop中查找某个字符串所在的hdfs位置ive中虚拟列"
+title:  "hadoop中查找某个字符串所在的hdfs位置"
 categories: Hadoop
 tags:  Hadoop
 author: wisgood
