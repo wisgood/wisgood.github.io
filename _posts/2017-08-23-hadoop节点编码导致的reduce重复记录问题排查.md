@@ -40,12 +40,12 @@ where line like '%0001a794d86f0844 %' ;
 
 ## 2.3 partition出错原因分析
 
-同一个key分到不同的reduce，首先第1种可能：自己重写了partition函数，写low了。跟该同学了解，该同学还没牛逼到自定义Partition类的程度，故排除该可能 。
+同一个key分到不同的reduce，首先第1种可能：自己重写了partition函数，写low了。跟该同学了解，该同学没有自定义Partition类，故排除该可能 。
 然后看了下hadoop的源码，Hadoop中默认的Partition类是HashPartitioner，代码如下。逻辑也比较简单。没看出啥问题。
 ![这里写图片描述](http://img.blog.csdn.net/20170825153906845?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2lzZ29vZA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-看了一会，没看出是啥原因。这个时候公司的下午茶来了：香蕉。吃完香蕉后，满血复活。接着又泡了个茶叶，继续盯代码。古人云：“读书百遍，其义自见”。
-突然想起来，处理的日志当中有中文。于是联想到 ：会不会是因为hadoop节点的字符编码不一致，导致不同split的同一个key ，hashcode返回值不一致，计算得到的partition不一样。决定验证一下。
+
+这个时候突然想起来，处理的日志当中有中文。于是联想到 ：会不会是因为hadoop节点的字符编码不一致，导致不同split的同一个key ，hashcode返回值不一致，计算得到的partition不一样。决定验证一下。
 
 ## 2.4 partition出错验证
 
