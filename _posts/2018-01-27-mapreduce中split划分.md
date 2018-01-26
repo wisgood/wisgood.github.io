@@ -29,12 +29,16 @@ map的个数等于split的个数。我们知道，mapreduce在处理大文件的
 - 2）提供一个RecordReader，用于将InputSplit的内容转换为可以作为map输入的k,v键值对。
 
 InputFormat在新版的实现是一个抽象类，其继承关系如下:
+
 ![这里写图片描述](https://images2015.cnblogs.com/blog/760432/201510/760432-20151027105804044-1980762420.png)
+
 
 从上图我们看到FileInputFormat是使用比较广泛的类，输入格式如果是hdfs上的文件，基本上用的都是FileInputFormat的子类，如TextInputFormat用来处理普通的文件，SequceFileInputFormat用来处理Sequce格式文件。
 FileInputFormat类中的getSplits(JobContext job)方法是划分split的主要逻辑。
 
 对于InputSplit，其也是一个抽象类，有多个不同实现。需要注意的是，不同的InputFormat划分出来的InputSplit也不一样，如下图
+
+
 ![这里写图片描述](https://images2015.cnblogs.com/blog/760432/201510/760432-20151027110357669-1939788266.png)
 
 对于FileInputFormat，划分出来的是FileSplit.对于FileSplit，比较重要的如下
@@ -65,11 +69,11 @@ public class FileSplit extends InputSplit implements Writable {
 ```
 - minSize :每个split的最小值，默认为1.getFormatMinSplitSize()为代码中写死，固定返回1，除非修改了hadoop的源代码.getMinSplitSize(job)取决于参数mapreduce.input.fileinputformat.split.minsize，如果没有设置该参数，返回1.故minSize默认为1.
 
--maxSize：每个split的最大值，如果设置了mapreduce.input.fileinputformat.split.maxsize，则为该值，否则为Long的最大值。
+- maxSize：每个split的最大值，如果设置了mapreduce.input.fileinputformat.split.maxsize，则为该值，否则为Long的最大值。
 
--blockSize ：默认为HDFS设置的文件存储BLOCK大小。注意：该值并不一定是唯一固定不变的。HDFS上不同的文件该值可能不同。故将文件划分成split的时候，对于每个不同的文件，需要获取该文件的blocksize。
+- blockSize ：默认为HDFS设置的文件存储BLOCK大小。注意：该值并不一定是唯一固定不变的。HDFS上不同的文件该值可能不同。故将文件划分成split的时候，对于每个不同的文件，需要获取该文件的blocksize。
 
--splitSize ：根据公式，默认为blockSize 。
+- splitSize ：根据公式，默认为blockSize 。
 
 
 >
