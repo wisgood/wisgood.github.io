@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "mapreduce中split划分"
-categories: Spark
+categories: Hadoop
 tags:  Hadoop MapReduce 
 author: wisgood
 ---
@@ -102,4 +102,4 @@ hdfs://namenode.test.net:9000/tmp/wordcount/input/part-r-0004        0
 - hdfs://namenode.test.net:9000/tmp/wordcount/input/part-r-00000 划分成3个split
 - hdfs://namenode.test.net:9000/tmp/wordcount/input/part-r-00002 划分成1个split
 - hdfs://namenode.test.net:9000/tmp/wordcount/input/part-r-00003 划分成1个split
-- hdfs://namenode.test.net:9000/tmp/wordcount/input/part-r-0004  不划分split 
+- hdfs://namenode.test.net:9000/tmp/wordcount/input/part-r-0004  不划分split
