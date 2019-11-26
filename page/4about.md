@@ -31,6 +31,12 @@ type: page
 
 ## 开源社区贡献
 
+#### Flink
+
+ 1. Flink-12682:StringWriter support custom row delimiter.[链接](https://issues.apache.org/jira/browse/FLINK-12682)
+
+
+
 #### Hive
 
  1. HIVE-12541:SymbolicTextInputFormat should supports the path with regex.[链接](https://issues.apache.org/jira/browse/HIVE-12541)
@@ -54,5 +60,6 @@ type: page
 #### Yarn
 
  1. YARN-4296:DistributedShell Log.info is not friendly.[链接](https://issues.apache.org/jira/browse/YARN-4296)
+
  
 
