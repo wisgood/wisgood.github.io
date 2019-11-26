@@ -16,6 +16,7 @@ author: wisgood
 def
 jdbc(url: String, table: String, columnName: String, lowerBound: Long, upperBound: Long, numPartitions: Int, connectionProperties: Properties): DataFrame
 ```
+
 | 参数      | 说明         | 
 |:-----------| :----------|
 | url | 访问mysql时的jdbc链接，如jdbc:mysql://190.1.98.225:2049/test| 
@@ -25,6 +26,8 @@ jdbc(url: String, table: String, columnName: String, lowerBound: Long, upperBoun
 | upperBound| 分区列的最大值| 
 | numPartitions| 预期的分区数| 
 | connectionProperties| mysql的配置参数，key value形式| 
+
+
 这里面容易引起混淆的是lowerBound和upperBound。需要注意的是lowerBound和upperBound仅用于决定划分分区时的步长，而不是用于按照这两个值对数据进行过滤。 因此，无论这两个值如何设置，表中的所有行都将被读取。
 
 同时需要注意的是，尽量不要创建太多分区，否则很容易将mysql搞挂。
