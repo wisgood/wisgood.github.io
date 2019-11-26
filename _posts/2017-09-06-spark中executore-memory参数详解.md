@@ -13,7 +13,7 @@ author: wisgood
 
 
 我们知道，spark执行的时候，可以通过	```--executor-memory``` 来设置executor执行时所需的memory。但如果设置的过大，程序是会报错的，如下
-![这里写图片描述](http://img.blog.csdn.net/20170905213901938?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2lzZ29vZA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20170905213901938)
  
 那么这个值最大能设置多少呢？本文来分析一下。
 文中安装的是Spark1.6.1，安装在hadoop2.7上。
