@@ -20,11 +20,11 @@ author: wisgood
 ## 1、相关的2个参数
 ### 1.1 yarn.scheduler.maximum-allocation-mb
 这个参数表示每个container能够申请到的最大内存，一般是集群统一配置。Spark中的executor进程是跑在container中，所以container的最大内存会直接影响到executor的最大可用内存。当你设置一个比较大的内存时，日志中会报错，同时会打印这个参数的值。如下图 ，6144MB，即6G。
- ![这里写图片描述](http://img.blog.csdn.net/20170905213956387?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2lzZ29vZA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+ ![这里写图片描述](http://img.blog.csdn.net/20170905213956387)
 
 ### 1.2 spark.yarn.executor.memoryOverhead
 executor执行的时候，用的内存可能会超过executor-memoy，所以会为executor额外预留一部分内存。spark.yarn.executor.memoryOverhead代表了这部分内存。这个参数如果没有设置，会有一个自动计算公式(位于ClientArguments.scala中)，代码如下：
- ![这里写图片描述](http://img.blog.csdn.net/20170905214008132?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2lzZ29vZA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+ ![这里写图片描述](http://img.blog.csdn.net/20170905214008132)
 
 其中，MEMORY_OVERHEAD_FACTOR默认为0.1，executorMemory为设置的executor-memory, MEMORY_OVERHEAD_MIN默认为384m。参数MEMORY_OVERHEAD_FACTOR和MEMORY_OVERHEAD_MIN一般不能直接修改，是Spark代码中直接写死的。
 
